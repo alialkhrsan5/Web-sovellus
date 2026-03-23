@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Tyylitellään itse linkki (ei oletusväriä, ei alleviivausta) */
+a {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover-efekti eli mitä tapahtuu kun hiiri on linkin päällä */
+a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+/* Kuvan tyylittely (reunus ja pyöristys) */
+img {
+    border: 4px solid black; /* Lisää 4 pikseliä paksun mustan reunuksen */
+    border-radius: 15px;     /* Pyöristää kulmia 15 pikselin verran */
+}
+/* Taulukon perusasetukset siistimmäksi */
+/* --- POISTA VANHA TAULUKKO-CSS JA KORVAA TÄLLÄ --- */
+
+/* Taulukon perusasetukset siistimmäksi */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Tehdään taulukosta täysilevyinen */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Solut ja otsikot: lisätään reunukset */
+th, td {
+    /* Käytetään pehmeää mustaa / tummanharmaata reunuksissa (#555555) */
+    border: 1px solid #555555; 
+    padding: 12px;
+    text-align: left;
+}
+
+/* Taulukon otsikkorivi (#f2f2f2 on vaaleanharmaa) */
+th {
+    background-color: #f2f2f2; 
+    color: #333333; /* Pehmeä musta teksti otsikoihin */
+}
+
+/* Tehtävän vaatimus: Joka toisen rivin taustaväri (parilliset rivit) */
+/* Käytetään pehmeää, vaaleaa punaista taustana (#F8D7DA) */
+tr:nth-child(even) {
+    background-color: #F8D7DA; 
+}
+/* Poistetaan oletuspallurat listasta */
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Poistetaan myös turha sisennys vasemmalta */
+}
